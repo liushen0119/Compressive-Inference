@@ -7,8 +7,8 @@
 ## 1. Environment Setup
 
 ```shell
-conda create --name sd3_compress python=3.10
-conda activate sd3_compress
+conda create --name sd3_m python=3.10
+conda activate sd3_m
 ```
 
 ## 2. Activate Environment
