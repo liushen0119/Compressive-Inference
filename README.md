@@ -109,25 +109,18 @@ Open `Experiment1.py` in your code editor.
 
 Hold down the `ctrl` key if you are on Linux or Windows, or the `command` key if you are on MacOS, and click on StableDiffusion3Pipeline.
 
-![image]()
+![image](/readme/Experiment1.png)
 
 This will navigate to the file `pipeline_stable_diffusion_3.py`.
 
 Replace `pipeline_stable_diffusion.py` with the file of the same name from this repository.
 
-## 5 Explanation of Our Code Files
+## 5. Explanation of Our Code Files
 
 `pipeline_stable_diffusion.py`: 
 
-In line 668, the parameter "num_inference_steps" is the total number of inference steps used to generate a satisfied image.
 
-In line 688, the parameter "common_step" is the number of common inference steps (i.e., the shared steps).
 
-In line 689, "prompt_unchanged" is True if there is no common inference phase, and vice versa.
-
-`Promps_Similarity.py`:
-
-Get the similarity score between the public and personal prompts.
 
 `Experiment1.py`：
 
