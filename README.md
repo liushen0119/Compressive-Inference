@@ -16,7 +16,7 @@ conda activate sd3_m
 Activate the created environment.
 
 ```shell
-conda activate LVM
+conda activate sd3_m
 ```
 
 ## 3. Install Required Packages
