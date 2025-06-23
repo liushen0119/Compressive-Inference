@@ -164,7 +164,7 @@ Fits sigmoid surface function.
 
 Saves formula and surface visualization.
 
-## 6 Explanation of Our Results
+## 6. Explanation of Our Results
 
 The data generated in Experiments 1-2 and fit_model are presented in dir：`result` (Coming soon).
 
@@ -184,7 +184,7 @@ compressed:  Indicates this is the compressed version of the generated image.
 
 eg：step10_ratio0.75_seed42_compressed.png
 ```
-## 7 Acknowledge
+## 7. Acknowledge
 
 [Stable Diffusion 3 Medium](https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers/tree/main): It is a wonferful image generation model.
 
