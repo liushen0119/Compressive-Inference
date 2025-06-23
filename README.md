@@ -159,11 +159,11 @@ Saves formula and surface visualization
 
 ## 6 Explanation of Our Results
 
-The data generated in Experiments 1-2 and fit_model are presented in dir：`result`.
+The data generated in Experiments 1-2 and fit_model are presented in dir：`result` (Coming soon).
 
 Our generated image is available in:
 
-Google Drive：------
+Google Drive：Coming soon
 
 Image naming rules：
 
