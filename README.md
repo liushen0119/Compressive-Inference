@@ -150,7 +150,7 @@ Main batch experiment logic.
 Sweeps across 12 compress steps × 9 ratios × 50 seeds = 5400 runs
 Saves images and records PSNR/SSIM into a CSV
 
-`Experiment3.py`：
+`fit_model.py`：
 
 Post-processing and quality modeling.
 Normalizes PSNR & SSIM, applies log mapping
@@ -159,7 +159,7 @@ Saves formula and surface visualization
 
 ## 6 Explanation of Our Results
 
-The data generated in Experiments 1-3 are presented in dir：`result`.
+The data generated in Experiments 1-2 and fit_model are presented in dir：`result`.
 
 Our generated image is available in:
 
