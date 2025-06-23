@@ -177,10 +177,10 @@ Image naming rules：
 ```shell
 step_ratio_seed_compressed.png
 
-step:     The denoising step at which latent compression is applied.
-ratio:    The compression ratio used (e.g., 0.75 means 75% precision retained).
-seed:     The random seed used to initialize generation.
-compressed: Indicates this is the compressed version of the generated image.
+step:        The denoising step at which latent compression is applied.
+ratio:       The compression ratio used (e.g., 0.75 means 75% precision retained).
+seed:        The random seed used to initialize generation.
+compressed:  Indicates this is the compressed version of the generated image.
 
 eg：step10_ratio0.75_seed42_compressed.png
 ```
