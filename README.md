@@ -141,21 +141,28 @@ In line 1108, the latent compression is triggered when the current step index i 
 `Experiment1.py`：
 
 Initial prototype experiment.
-Generates original and compressed images
-Tests various compression ratios and steps individually
+
+Generates original and compressed images.
+
+Tests various compression ratios and steps individually.
 
 `Experiment2.py`：
 
 Main batch experiment logic.
-Sweeps across 12 compress steps × 9 ratios × 50 seeds = 5400 runs
-Saves images and records PSNR/SSIM into a CSV
+
+Sweeps across 12 compress steps × 9 ratios × 50 seeds = 5400 runs.
+
+Saves images and records PSNR/SSIM into a CSV.
 
 `fit_model.py`：
 
 Post-processing and quality modeling.
-Normalizes PSNR & SSIM, applies log mapping
-Fits sigmoid surface function: 
-Saves formula and surface visualization
+
+Normalizes PSNR & SSIM, applies log mapping.
+
+Fits sigmoid surface function.
+
+Saves formula and surface visualization.
 
 ## 6 Explanation of Our Results
 
