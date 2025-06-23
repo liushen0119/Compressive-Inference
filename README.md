@@ -132,8 +132,11 @@ Replace `pipeline_stable_diffusion.py` with the file of the same name from this 
 
 `pipeline_stable_diffusion.py`: 
 
+In line 664, the method _compress_latents is defined to quantize latent values by rounding to a fixed number of decimal places, determined by the scale parameter.
 
+In line 811, the parameter compress_at_step specifies at which denoising step the latent tensor will be compressed.
 
+In line 1108, the latent compression is triggered when the current step index i equals compress_at_step, and it calls _compress_latents with the specified compress_scale.
 
 `Experiment1.py`：
 
@@ -156,7 +159,28 @@ Saves formula and surface visualization
 
 ## 6 Explanation of Our Results
 
+The data generated in Experiments 1-3 are presented in dir：`result`.
+
 Our generated image is available in:
 
-xxx
+Google Drive：------
 
+Image naming rules：
+
+```shell
+step_ratio_seed_compressed.png
+
+step:     The denoising step at which latent compression is applied.
+ratio:    The compression ratio used (e.g., 0.75 means 75% precision retained).
+seed:     The random seed used to initialize generation.
+compressed: Indicates this is the compressed version of the generated image.
+
+eg：step10_ratio0.75_seed42_compressed.png
+```
+## 7 Acknowledge
+
+[Stable Diffusion 3 Medium](https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers/tree/main): It is a wonferful image generation model.
+
+Thanks to all my partners!
+
+If you have any confusion, please feel free to contact us!
