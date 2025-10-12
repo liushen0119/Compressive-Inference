@@ -132,22 +132,27 @@ Replace `pipeline_stable_diffusion.py` with the file of the same name from this 
 
 `pipeline_stable_diffusion.py`: 
 
-In line 632, the method _compress_latents is defined to quantize latent values by rounding to a fixed number of decimal places, determined by the scale parameter.
+In line 632, the method _compress_latents is defined the uniform quantization of the latent tensor.
 
-In line 811, the parameter compress_at_step specifies at which denoising step the latent tensor will be compressed.
-
-In line 1108, the latent compression is triggered when the current step index i equals compress_at_step, and it calls _compress_latents with the specified compress_scale.
+In line 926, the latent compression is triggered when the current step index i equals compress_at_step, and it calls _compress_latents with the specified compress_scale.
 
 `experiment_1.py`：
 
 Main batch experiment logic.
 
+Generates 50 baseline (uncompressed) images.
+
 Sweeps across 12 compress steps × 9 ratios × 50 seeds = 5400 runs.
 
-Saves images and records SSIM into a CSV.
+Saves images and records SSIM into a CSV `compression_data.csv`.
 
 `plot.py`：
 
+Generates visualization plots from experimental data.
+
+1. SSIM vs Compression Rate
+
+2. SSIM vs Compression Step
 
 `fit_quadratic.py`：
 
