@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-OUTPUT_DIR = "./Experiment_results_1"        # Root folder containing CSV
-CSV_FILENAME = "compression_data_1.csv"      # CSV file name inside OUTPUT_DIR
+OUTPUT_DIR = "./Experiment_results"          # Root folder containing CSV
+CSV_FILENAME = "compression_data.csv"        # CSV file name inside OUTPUT_DIR
 PLOT_SUBDIR = "plots"                        # Subfolder for saving plots
 BITS_TO_PLOT = list(range(1, 17))            # Which bits to include (e.g., [8], [4,6], [8,6,4])                 
 SHOW_ERROR_BARS = False                      # Whether to show ±std error bars
