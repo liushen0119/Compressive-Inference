@@ -105,6 +105,6 @@ for p_idx, prompt in enumerate(prompts):
 
 # Save to CSV
 df = pd.DataFrame(results)
-csv_path = os.path.join(output_dir, "compression_data_1.csv")
+csv_path = os.path.join(output_dir, "compression_data.csv")
 df.to_csv(csv_path, index=False)
 print(f"Saved results to: {csv_path}")
