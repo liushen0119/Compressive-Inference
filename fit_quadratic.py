@@ -4,8 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Configuration
-CSV_IN = "./Experiment_results_1/compression_data.csv"     # Path to input CSV
-OUT_DIR = "./Experiment_results_1/quadratic_fit"             # Output directory
+CSV_IN = "./Experiment_results/compression_data.csv"         # Path to input CSV
+OUT_DIR = "./Experiment_results/quadratic_fit"               # Output directory
 BITS_TO_FIT = [8, 6, 4]                                      # Which bit-depths to fit, e.g. [8] or [4, 6]
 INCLUDE_SCATTER = True                                       # Whether to plot raw scatter points
 MIN_POINTS = 3                                               # Minimum distinct x values (steps) to perform quadratic fit
