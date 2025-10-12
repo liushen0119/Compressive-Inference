@@ -9,7 +9,7 @@ from skimage.metrics import structural_similarity as ssim
 
 # Configuration
 model_path = "../sd3_medium"
-output_dir = "./Experiment_results_1"
+output_dir = "./Experiment_results"
 image_dir = os.path.join(output_dir, "images")
 os.makedirs(image_dir, exist_ok=True)
 
