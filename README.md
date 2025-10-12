@@ -161,7 +161,7 @@ Saves formula and surface visualization.
 
 ## 6. Explanation of Our Results
 
-The data generated in experiment_1, plot.py and fit_model are presented in dir：`Experiment_results`.
+The data generated in experiment_1, plot and fit_model are presented in dir：`Experiment_results`.
 
 Our generated image is available in:
 
