@@ -132,33 +132,28 @@ Replace `pipeline_stable_diffusion.py` with the file of the same name from this 
 
 `pipeline_stable_diffusion.py`: 
 
-In line 664, the method _compress_latents is defined to quantize latent values by rounding to a fixed number of decimal places, determined by the scale parameter.
+In line 632, the method _compress_latents is defined to quantize latent values by rounding to a fixed number of decimal places, determined by the scale parameter.
 
 In line 811, the parameter compress_at_step specifies at which denoising step the latent tensor will be compressed.
 
 In line 1108, the latent compression is triggered when the current step index i equals compress_at_step, and it calls _compress_latents with the specified compress_scale.
 
-`Experiment1.py`：
-
-Initial prototype experiment.
-
-Generates original and compressed images.
-
-Tests various compression ratios and steps individually.
-
-`Experiment2.py`：
+`experiment_1.py`：
 
 Main batch experiment logic.
 
 Sweeps across 12 compress steps × 9 ratios × 50 seeds = 5400 runs.
 
-Saves images and records PSNR/SSIM into a CSV.
+Saves images and records SSIM into a CSV.
 
-`fit_model.py`：
+`plot.py`：
+
+
+`fit_quadratic.py`：
 
 Post-processing and quality modeling.
 
-Normalizes PSNR & SSIM, applies log mapping.
+Normalizes SSIM, applies log mapping.
 
 Fits sigmoid surface function.
 
@@ -166,7 +161,7 @@ Saves formula and surface visualization.
 
 ## 6. Explanation of Our Results
 
-The data generated in Experiments 1-2 and fit_model are presented in dir：`results` (Coming soon).
+The data generated in experiment_1, plot.py and fit_model are presented in dir：`Experiment_results`.
 
 Our generated image is available in:
 
