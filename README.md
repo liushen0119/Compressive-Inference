@@ -170,7 +170,8 @@ The data generated in experiment_1, plot and fit_model are presented in dir：`E
 
 Our generated image is available in:
 
-Quark Drive: https://pan.quark.cn/s/3e0196c1fbd1?pwd=31Bk  Code: 31Bk
+Quark Drive: https://pan.quark.cn/s/3e0196c1fbd1?pwd=31Bk  
+Code: 31Bk
 
 Image naming rules：
 
